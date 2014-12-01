@@ -1,7 +1,7 @@
 ﻿Imports ComponentFactory.Krypton.Toolkit
 Imports System.ComponentModel
 
-Public Class aTextBox
+Public Class rTextBox
     Inherits ComponentFactory.Krypton.Toolkit.KryptonTextBox
 
 #Region " DECLARACIONES "
@@ -97,18 +97,18 @@ Public Class aTextBox
 
         End Get
         Set(ByVal value As String)
-            iTextoOriginal = value            
+            iTextoOriginal = value
         End Set
     End Property
 
-    Protected Overrides Sub OnGotFocus(ByVal e As System.EventArgs)        
+    Protected Overrides Sub OnGotFocus(ByVal e As System.EventArgs)
         MostrarBoton()
         If seleccionarTodo Then TextBox.SelectAll()
         MyBase.OnGotFocus(e)
     End Sub
 
     Protected Overrides Sub OnLostFocus(ByVal e As System.EventArgs)
-        iTextoOriginal = MyBase.Text        
+        iTextoOriginal = MyBase.Text
         MostrarBoton()
         MyBase.OnLostFocus(e)
     End Sub

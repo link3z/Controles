@@ -1,6 +1,6 @@
 ﻿Imports Recompila.Helper
 
-Public Class aTextOpenFile
+Public Class rTextOpenFile
 
 #Region " DECLARACIONES "
     ''' <summary>

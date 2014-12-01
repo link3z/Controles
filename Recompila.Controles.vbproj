@@ -140,16 +140,16 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2.Base del programa\Controles\Controles.aTextOpenFile.designer.vb">
-      <DependentUpon>Controles.aTextOpenFile.vb</DependentUpon>
-    </Compile>
-    <Compile Include="2.Base del programa\Controles\Controles.aTextOpenFile.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="2.Base del programa\Controles\rTextBox.vb" />
     <Compile Include="2.Base del programa\Controles\rDateTimePicker.vb" />
     <Compile Include="2.Base del programa\Controles\rComboIcon.vb" />
     <Compile Include="2.Base del programa\Controles\rComboBox.vb" />
+    <Compile Include="2.Base del programa\Controles\rTextOpenFile.designer.vb">
+      <DependentUpon>rTextOpenFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.Base del programa\Controles\rTextOpenFile.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
@@ -173,8 +173,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="2.Base del programa\Controles\Controles.aTextOpenFile.resx">
-      <DependentUpon>Controles.aTextOpenFile.vb</DependentUpon>
+    <EmbeddedResource Include="2.Base del programa\Controles\rTextOpenFile.resx">
+      <DependentUpon>rTextOpenFile.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

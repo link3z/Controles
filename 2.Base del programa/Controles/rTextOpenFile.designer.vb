@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-        Partial Class aTextOpenFile
+Partial Class rTextOpenFile
     Inherits System.Windows.Forms.UserControl
 
     'UserControl reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,8 +22,8 @@
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(aTextOpenFile))
-        Me.txtRuta = New Controles.aTextBox()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(rTextOpenFile))
+        Me.txtRuta = New Recompila.Controles.rTextBox()
         Me.btnAbrir = New ComponentFactory.Krypton.Toolkit.ButtonSpecAny()
         Me.SuspendLayout()
         '
@@ -32,12 +32,13 @@
         Me.txtRuta.ButtonSpecs.AddRange(New ComponentFactory.Krypton.Toolkit.ButtonSpecAny() {Me.btnAbrir})
         Me.txtRuta.controlarBotonBorrar = True
         Me.txtRuta.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.txtRuta.limpiarAlPulsarBoton = True
         Me.txtRuta.Location = New System.Drawing.Point(0, 0)
         Me.txtRuta.mostrarSiempreBotonBorrar = False
         Me.txtRuta.Name = "txtRuta"
         Me.txtRuta.ReadOnly = True
         Me.txtRuta.seleccionarTodo = True
-        Me.txtRuta.Size = New System.Drawing.Size(213, 21)
+        Me.txtRuta.Size = New System.Drawing.Size(213, 23)
         Me.txtRuta.TabIndex = 0
         '
         'btnAbrir
@@ -45,29 +46,29 @@
         Me.btnAbrir.Image = CType(resources.GetObject("btnAbrir.Image"), System.Drawing.Image)
         Me.btnAbrir.UniqueName = "68C4EB7C1130489330A9703CDEB9BAC3"
         '
-        'aTextOpenFile
+        'rTextOpenFile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.txtRuta)
-        Me.Name = "aTextOpenFile"
+        Me.Name = "rTextOpenFile"
         Me.Size = New System.Drawing.Size(213, 24)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents txtRuta As Controles.aTextBox
+    Friend WithEvents txtRuta As Controles.rTextBox
     Friend WithEvents btnAbrir As ComponentFactory.Krypton.Toolkit.ButtonSpecAny
 
 
-Public ReadOnly Property losComponentes As System.ComponentModel.ComponentCollection
-    Get
-        If Me.components IsNot Nothing Then
-            Return Me.components.Components
-        else
-            Return Nothing
-        End If
-    End Get
-End Property
+    Public ReadOnly Property losComponentes As System.ComponentModel.ComponentCollection
+        Get
+            If Me.components IsNot Nothing Then
+                Return Me.components.Components
+            Else
+                Return Nothing
+            End If
+        End Get
+    End Property
 
 End Class
