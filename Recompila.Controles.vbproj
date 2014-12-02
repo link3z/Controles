@@ -140,6 +140,9 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2.Base del programa\Controles\rDragPicture.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="2.Base del programa\Controles\rCheckOnOff.designer.vb">
       <DependentUpon>rCheckOnOff.vb</DependentUpon>
     </Compile>
@@ -183,6 +186,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="2.Base del programa\Controles\rDragPicture.resx">
+      <DependentUpon>rDragPicture.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="2.Base del programa\Controles\rCheckOnOff.resx">
       <DependentUpon>rCheckOnOff.vb</DependentUpon>
     </EmbeddedResource>
