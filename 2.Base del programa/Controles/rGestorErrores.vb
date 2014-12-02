@@ -61,7 +61,7 @@ Public Class rGestorErrores
                                 ByVal eError As String)
         Dim Aux As Integer = Controles.IndexOf(eControl)
         MyBase.SetError(eControl, eError)
-        pintarError(eControl, Not String.IsNullOrEmpty(eError))
+        pintarControl(eControl, Not String.IsNullOrEmpty(eError))
 
         If String.IsNullOrEmpty(eError) Then
             If Aux >= 0 Then
@@ -92,8 +92,8 @@ Public Class rGestorErrores
     ''' </summary>
     ''' <param name="eControl">Control que se está controlando</param>
     ''' <param name="eConError">Si hay un error lo pinta con los colores de error, en caso contrario lo pinta normal</param>
-    Public Sub pintarError(ByVal eControl As Object, _
-                           ByVal eConError As Boolean)
+    Public Sub pintarControl(ByVal eControl As Object, _
+                             ByVal eConError As Boolean)
         If TypeOf (eControl) Is KryptonTextBox Then
             If eConError Then
                 CType(eControl, KryptonTextBox).StateCommon.Border.Color1 = Sistema.Presentacion.Errores._KO_CUADRO
