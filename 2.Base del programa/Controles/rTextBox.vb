@@ -20,6 +20,7 @@ Public Class rTextBox
 #End Region
 
 #Region " PROPIEDADES "
+    '''<summary>
     ''' Determina si se tiene que controlar el botón borrar
     ''' </summary>
     Public Property controlarBotonBorrar As Boolean = True
