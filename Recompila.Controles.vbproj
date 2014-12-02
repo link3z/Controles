@@ -140,6 +140,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2.Base del programa\Controles\rComboFont.vb" />
     <Compile Include="2.Base del programa\Controles\rDragPicture.vb">
       <SubType>Component</SubType>
     </Compile>
