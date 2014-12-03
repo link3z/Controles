@@ -140,6 +140,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2.Base del programa\Controles\rPosicion.designer.vb">
+      <DependentUpon>rPosicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.Base del programa\Controles\rPosicion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="2.Base del programa\Controles\rComboFont.vb" />
     <Compile Include="2.Base del programa\Controles\rDragPicture.vb">
       <SubType>Component</SubType>
@@ -181,6 +187,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="2.Base del programa\Controles\rPosicion.resx">
+      <DependentUpon>rPosicion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="2.Base del programa\Controles\rDragPicture.resx">
       <DependentUpon>rDragPicture.vb</DependentUpon>
     </EmbeddedResource>
