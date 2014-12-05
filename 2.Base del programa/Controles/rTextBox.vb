@@ -99,6 +99,7 @@ Public Class rTextBox
         End Get
         Set(ByVal value As String)
             iTextoOriginal = value
+            MyBase.Text = iTextoOriginal
         End Set
     End Property
 

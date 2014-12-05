@@ -35,6 +35,18 @@ Public Class rTextOpenFile
     ''' Nombre del archivo a abrir
     ''' </summary>
     Public Property NombreArchivo As String = ""
+
+    ''' <summary>
+    ''' Icono que se mostrará en el botón de apertura
+    ''' </summary>
+    Public Property IconoApertura As Image
+        Get
+            Return btnAbrir.Image
+        End Get
+        Set(value As Image)
+            btnAbrir.Image = value
+        End Set
+    End Property
 #End Region
 
 #Region " EVENTOS "
